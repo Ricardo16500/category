@@ -1,2 +1,24 @@
 ###
-GET http://localhost:8080/category
+GET http://localhost:8080/categories/21
+Accept: application/json
+
+###
+POST http://localhost:8080/categories
+Content-Type: application/json
+
+{
+    "name": "History"
+}
+
+
+###
+PUT http://localhost:8080/categories/1
+Content-Type: application/json
+
+{
+    "name": "History"
+}
+
+###
+DELETE http://localhost:8080/categories/19
+Content-Type: application/json
